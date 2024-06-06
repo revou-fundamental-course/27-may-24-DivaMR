@@ -1,13 +1,153 @@
 <!-- https://<token>github.com/revou-fundamental-course/27-may-24-DivaMR.git -->
     
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rizki Portopolio</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <nav>
+            <!-- Div untuk logo -->
+           <div class="logo-icon"></div>
     
-</body>
-</html>
+           <!-- section homen fasilities dan message -->
+           <section>
+            <div class="nav-item">
+            <button>Home</button>
+            <button>Idol</button>
+            <button>Message us</button> 
+            </div>
+           </section>
+        </nav>
+    
+        
+        <hr>
+    
+        <!-- section perwakilan konten besar sedangkan article untuk konten kecil -->
+        <section class="section-container">
+            <!-- Home -->
+            <section id="home">
+                <header class="sub-tittle">
+                    <h1>Hy <span id="name">Rizki</span>, Welcome to Love Live franchise</h1>
+                    
+                </header>
+    
+                <article>
+                    <p>Love Live! School Idol Project is a Japanese multimedia project co-developed by ASCII Media Works' Dengeki G's Magazine, music label Lantis, and animation studio Sunrise. It is the first multimedia project in the Love Live! franchise. The project revolves around a group of nine schoolgirls who become idols in order to save their school from shutting down. It launched in the August 2010 issue of Dengeki G's Magazine, and went on to produce music CDs, anime music videos, two manga adaptations, and video games</p>
+    
+                    <div class="banner-container">
+                        <div class="banner-img">
+                            <img src="../Asset/gambar1 .webp">
+                        </div>
+    
+                        <div class="banner-img">
+                            <img  src="../Asset/gambar 2.webp">
+                        </div>
+    
+                        <div class="banner-img">
+                            <img  src="../Asset/gambar3.webp">
+                        </div>
+                       
+                       <div class="button-banner">
+                        <button type="button" id="prev"  onclick="nextSlide(0)"><</button>
+                        <button type="button" id="next"  onclick="nextSlide(1)">></button>
+                        
+                       </div>
+                       
+                    </div>
+                </article>
+            
+                <hr>
+                
+            </section>
+            <!-- Our idol -->
+            <section class="our-idol" id="idol">
+                <header>
+                <h2>Our Idol</h2>
+                </header>
+                <article class="idol-list">
+                <div>
+                    <div class="muse"></div>
+                    <h5>Muse</h5>
+                </div>
+    
+                <div>
+                    <div class="aquors"></div>
+                    <h5>Aquors</h5>
+                </div>
+    
+                <div>
+                    <div class="nijigasaki"></div>
+                    <h5>Nijigasaki</h5>
+                </div>
+                
+                <div>
+                    <div>
+                        <div class="liella"></div>
+                        <h5>liella</h5>
+                    </div>
+                </div>
+    
+                </article>
+                
+                <hr>
+    
+            </section >
+            <!-- Message Us --> 
+            <section>
+                <header class="message-kita">
+                    <h2  class="message-us" id="message-us">Message us</h2>
+                </header>
+                <section class="message-us-section">
+                    <p>If you interested, come and join us</p>
+                    <!-- ini form -->
+                    <section id="formulir">
+                        <form class="contact-form" id="contact-form" method="post" >
+                            <div class="container">
+                                <h2>Contact Us</h2>
+                                <form id="contactForm">
+                                    <div class="form-group">
+                                        <label for="name">Name:</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dob">Date of Birth:</label>
+                                        <input type="date" id="dob" name="dob" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="gender">Gender:</label>
+                                        <div class="radio-group">
+                                            <input type="radio" id="male" name="gender" value="male" required>
+                                            <label for="male">Male</label>
+                                            <input type="radio" id="female" name="gender" value="female" required>
+                                            <label for="female">Female</label>
+                                            <input type="radio" id="other" name="gender" value="other" required>
+                                            <label for="other">Other</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message:</label>
+                                        <textarea id="message" name="message" rows="4" required></textarea>
+                                    </div>
+                                    <div class="form-grup">
+                                        <button class="button-send" type="button" onclick="formValidation()">submit</button>
+                                    </div>
+                        </form>
+                    </section>
+            </section>
+        </section>
+    
+    
+    
+        <footer>
+            <div>
+                <p>Created by Rizki</p>
+            </div>
+        </footer>
+    
+        <script src="../js/script.js"></script>
+    </body>
+    </html>
